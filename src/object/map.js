@@ -1,13 +1,11 @@
 import { entries } from "./entries";
+import { id } from "../function/id";
 
-export const mapKeys = (obj, fn) =>
+export const map = (obj, keyFn, valFn) =>
   entries(obj).reduce(
-    (acc, [key, val]) => ({ ...acc, [fn(val, key)]: val }),
+    (result, [key, val]) => ({ ...result, [keyFn(key, val)]: valFn(val, key) }),
     {}
   );
 
-export const mapValues = (obj, fn) =>
-  entries(obj).reduce(
-    (acc, [key, val]) => ({ ...acc, [key]: fn(val, key) }),
-    {}
-  );
+export const mapKeys = (obj, fn) => map(obj, fn, id);
+export const mapValues = (obj, fn) => map(obj, id, fn);

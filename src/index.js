@@ -1,8 +1,9 @@
+export * from "./shared/map";
+
 export * from "./array/each";
 export * from "./array/every";
 export * from "./array/filter";
 export * from "./array/length";
-export * from "./array/map";
 export * from "./array/range";
 export * from "./array/reduce";
 export * from "./array/reverse";
