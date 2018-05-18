@@ -1,4 +1,5 @@
 language: node_js
+
 node_js:
   - "lts/*"
 
@@ -15,3 +16,7 @@ jobs:
       script: yarn test
     - stage: build
       script: yarn build
+
+branches:
+  only:
+    - master
