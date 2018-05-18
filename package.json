@@ -7,7 +7,7 @@
   "author": "Klint Mane <klintmane@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "yarn test && webpack",
+    "build": "webpack",
     "test": "jest"
   },
   "devDependencies": {
