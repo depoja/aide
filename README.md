@@ -8,4 +8,6 @@
 <h4 align="center">The repetitive JS developer's aide</h4>
 <br>
 
-__aidej__ is simply a utility library.
+[![Build Status](https://travis-ci.org/klintmane/aidej.svg?branch=master)](https://travis-ci.org/klintmane/aidej)
+
+**aidej** is simply a utility library.
