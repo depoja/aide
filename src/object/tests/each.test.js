@@ -1,5 +1,14 @@
 import { each, eachKey, eachValue } from "../each";
 
+describe("each", () => {
+  it("works", () => {
+    let result = "";
+    each({ a: 1, b: 2 }, key => (result += key), val => (result += `:${val};`));
+
+    expect(result).toBe("a:1;b:2;");
+  });
+});
+
 describe("eachKey", () => {
   it("works", () => {
     let keys = "";
@@ -11,8 +20,8 @@ describe("eachKey", () => {
 
 describe("eachValue", () => {
   it("works", () => {
-    let sum;
-    eachKey({ a: 1, b: 2 }, val => (sum += val));
+    let sum = 0;
+    eachValue({ a: 1, b: 2 }, val => (sum += val));
 
     expect(sum).toBe(3);
   });
