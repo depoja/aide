@@ -3,7 +3,7 @@ import { each, eachKey, eachValue } from "../each";
 describe("each", () => {
   it("works", () => {
     let result = "";
-    each({ a: 1, b: 2 }, key => (result += key), val => (result += `:${val};`));
+    each({ a: 1, b: 2 }, (key, val) => (result += `${key}:${val};`));
 
     expect(result).toBe("a:1;b:2;");
   });

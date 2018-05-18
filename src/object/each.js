@@ -1,11 +1,10 @@
 import { entries } from "./entries";
+import { keys } from "./keys";
+import { values } from "./values";
 import { each as _each } from "../array/each";
 
-export const each = (obj = {}, keyFn = () => {}, valFn = () => {}) =>
-  _each(entries(obj), ([key, val]) => {
-    keyFn(key, val);
-    valFn(val, key);
-  });
+export const each = (obj, fn) =>
+  _each(entries(obj), (entry, ...args) => fn(...entry, ...args));
 
-export const eachKey = (obj, fn) => each(obj, fn, undefined);
-export const eachValue = (obj, fn) => each(obj, undefined, fn);
+export const eachKey = (obj, fn) => _each(keys(obj), fn);
+export const eachValue = (obj, fn) => _each(values(obj), fn);
