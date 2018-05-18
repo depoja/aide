@@ -9,7 +9,9 @@ cache:
 
 jobs:
   include:
+    - stage: setup
+      script: yarn
     - stage: test
-      script: yarn && yarn test
+      script: yarn test
     - stage: build
-      script: yarn && yarn build
+      script: yarn build
