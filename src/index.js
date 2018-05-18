@@ -1,6 +1,7 @@
+export * from "./shared/clone";
 export * from "./shared/map";
+export * from "./shared/each";
 
-export * from "./array/each";
 export * from "./array/every";
 export * from "./array/filter";
 export * from "./array/length";
@@ -12,9 +13,10 @@ export * from "./array/sort";
 
 export * from "./function/compose";
 export * from "./function/curry";
+export * from "./function/id";
 
-export * from "./object/each";
+export { eachKey, eachValue } from "./object/each";
 export * from "./object/entries";
 export * from "./object/keys";
-export * from "./object/map";
+export { mapKeys, mapValues } from "./object/map";
 export * from "./object/values";
