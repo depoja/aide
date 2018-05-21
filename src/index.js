@@ -17,6 +17,8 @@ export * from "./function/id";
 
 export { eachKey, eachValue } from "./object/each";
 export * from "./object/entries";
+export * from "./object/get";
 export * from "./object/keys";
 export { mapKeys, mapValues } from "./object/map";
+export * from "./object/set";
 export * from "./object/values";
