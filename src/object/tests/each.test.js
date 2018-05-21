@@ -1,9 +1,9 @@
-import { each, eachKey, eachValue } from "../each";
+import { eachEntry, eachKey, eachValue } from "../each";
 
-describe("each", () => {
+describe("eachEntry", () => {
   it("works", () => {
     let result = "";
-    each({ a: 1, b: 2 }, (key, val) => (result += `${key}:${val};`));
+    eachEntry({ a: 1, b: 2 }, (key, val) => (result += `${key}:${val};`));
 
     expect(result).toBe("a:1;b:2;");
   });
