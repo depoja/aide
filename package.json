@@ -1,6 +1,6 @@
 {
   "name": "@srcode/aide",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The repetitive JS developer's aide",
   "main": "dist/main.js",
   "repository": "https://github.com/srcode-org/aide",
