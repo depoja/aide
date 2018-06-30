@@ -1,6 +1,6 @@
 const stripQuotes = str => str.replace(/['"`]/g, "");
 
-export const parsePath = path =>
+export const parsePath = (path = "") =>
   path
     .split(/[.\[\]]/)
     .filter(key => !!key)

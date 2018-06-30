@@ -1,0 +1,31 @@
+toc:
+  - name: Array
+    description: |
+      Array-related utilities.
+  - length
+  - reverse
+  - each
+  - map
+  - reduce
+  - filter
+  - sort
+  - every
+  - some
+  - range
+  - name: Object
+    description: |
+      Object-related utilities.
+  - keys
+  - values
+  - entries
+  - eachKey
+  - eachValue
+  - eachEntry
+  - mapKeys
+  - mapValues
+  - mapEntries
+  - get
+  - set
+  - name: Uncategorized
+    description: |
+      Uncategorized utilities.
