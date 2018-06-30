@@ -9,9 +9,10 @@
   "homepage": "https://github.com/srcode-org/aide#readme",
   "scripts": {
     "build": "webpack",
-    "prepublish": "npm run test && npm run build",
+    "prepublish": "npm run test && npm run build && npm run document",
     "test": "jest",
-    "document": "documentation build src/** -f html -o docs -c documentation.yml"
+    "document":
+      "documentation build src/** -f html -o docs -c documentation.yml"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

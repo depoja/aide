@@ -1,0 +1,2328 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>@srcode/aide 0.0.5 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
+  <link href='assets/style.css' type='text/css' rel='stylesheet' />
+  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+  <link href='assets/split.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>@srcode/aide</h3>
+          <div class='mb1'><code>0.0.5</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#array'
+                  class="h5 bold black caps">
+                  Array
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#length'
+                  class="">
+                  length
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#reverse'
+                  class="">
+                  reverse
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#each'
+                  class="">
+                  each
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#map'
+                  class="">
+                  map
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#reduce'
+                  class="">
+                  reduce
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#filter'
+                  class="">
+                  filter
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#sort'
+                  class="">
+                  sort
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#every'
+                  class="">
+                  every
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#some'
+                  class="">
+                  some
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#range'
+                  class="">
+                  range
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#object'
+                  class="h5 bold black caps">
+                  Object
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#keys'
+                  class="">
+                  keys
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#values'
+                  class="">
+                  values
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#entries'
+                  class="">
+                  entries
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#eachkey'
+                  class="">
+                  eachKey
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#eachvalue'
+                  class="">
+                  eachValue
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#eachentry'
+                  class="">
+                  eachEntry
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#mapkeys'
+                  class="">
+                  mapKeys
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#mapvalues'
+                  class="">
+                  mapValues
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#mapentries'
+                  class="">
+                  mapEntries
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#get'
+                  class="">
+                  get
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#set'
+                  class="">
+                  set
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#uncategorized'
+                  class="h5 bold black caps">
+                  Uncategorized
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#parsepath'
+                  class="">
+                  parsePath
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='http://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h2 id='array' class='mt0'>
+    Array
+  </h2>
+
+  
+    <p>Array-related utilities.</p>
+
+  
+</section>
+</div>
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='length'>
+      length
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Returns the number of elements in a given array.</p>
+
+
+  <div class='pre p1 fill-light mt0'>length</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>array</span> <code class='quiet'>(<a href="#array">Array</a>&#x3C;any>)</code>
+	    The target array.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
+        The number of elements.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { length } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+length([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span>]); <span class="hljs-comment">// 3</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='reverse'>
+      reverse
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Reverses the order of the elements in a given array.</p>
+
+
+  <div class='pre p1 fill-light mt0'>reverse</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>array</span> <code class='quiet'>(<a href="#array">Array</a>&#x3C;any>)</code>
+	    The target array.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        A new array with the reversed order.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { reverse } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+reverse([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span>]); <span class="hljs-comment">// [5, 2, 1]</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='each'>
+      each
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Calls a function for each element in a given array.</p>
+
+
+  <div class='pre p1 fill-light mt0'>each</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>array</span> <code class='quiet'>(<a href="#array">Array</a>&#x3C;any>)</code>
+	    The target array.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(function (element: any, index: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, array: <a href="#array">Array</a>&#x3C;any>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a>)</code>
+	    The function to call for each element.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>this</span> <code class='quiet'>(any?)</code>
+	    The 
+<strong>this</strong>
+ context of the callback.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { each } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+each([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span>], <span class="hljs-built_in">console</span>.log); <span class="hljs-comment">// outputs each element</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='map'>
+      map
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Calls a function for each element in a given array and returns a new array containing the return values instead of the elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>map</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>array</span> <code class='quiet'>(<a href="#array">Array</a>&#x3C;any>)</code>
+	    The target array.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(function (element: any, index: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, array: <a href="#array">Array</a>&#x3C;any>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a>)</code>
+	    The function to call for each element.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>this</span> <code class='quiet'>(any?)</code>
+	    The 
+<strong>this</strong>
+ context of the callback.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#array">Array</a>&#x3C;any></code>:
+        The new array containing the return values instead of the elements.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { map } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+map([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span>], el =&gt; el + <span class="hljs-number">1</span>); <span class="hljs-comment">// [2, 3, 6]</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='reduce'>
+      reduce
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Calls a function against each element of a given array and an accumulator (resulting from the function) to reduce it to a single value.</p>
+
+
+  <div class='pre p1 fill-light mt0'>reduce</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>array</span> <code class='quiet'>(<a href="#array">Array</a>&#x3C;any>)</code>
+	    The target array.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(function (accumulator: any, element: any, elementIndex: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, array: <a href="#array">Array</a>&#x3C;any>): any)</code>
+	    The function to call for each element.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>initialAccumulator</span> <code class='quiet'>(any)</code>
+	    The 
+<strong>accumulator's</strong>
+ initial value.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        The new value resulting from the reduction.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { reduce } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+reduce([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span>], (acc, el) =&gt; acc + el); <span class="hljs-comment">// 8; The sum of the array</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='filter'>
+      filter
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Calls a function for each element and returns an array containing only the elements for which the function returned true.</p>
+
+
+  <div class='pre p1 fill-light mt0'>filter</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>array</span> <code class='quiet'>(<a href="#array">Array</a>&#x3C;any>)</code>
+	    The target array.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(function (element: any, index: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, array: <a href="#array">Array</a>&#x3C;any>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    The function to call for each element.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>this</span> <code class='quiet'>(any?)</code>
+	    The 
+<strong>this</strong>
+ context of the callback.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#array">Array</a>&#x3C;any></code>:
+        The filtered array.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { filter } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+filter([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span>], el =&gt; el &gt; <span class="hljs-number">3</span>); <span class="hljs-comment">// [5]</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='sort'>
+      sort
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Sorts the array using a given compare function. If not specified, the elements will be sorted according to their unicode value.</p>
+
+
+  <div class='pre p1 fill-light mt0'>sort</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>array</span> <code class='quiet'>(<a href="#array">Array</a>&#x3C;any>)</code>
+	    The target array.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>compare</span> <code class='quiet'>(function (current: any, next: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    The function which compares the 
+<em>current</em>
+ element to the 
+<em>next</em>
+. If it returns a 
+<strong>negative</strong>
+ value 
+<em>current</em>
+ before 
+<em>next</em>
+, if it returns a 
+<strong>positive</strong>
+ value 
+<em>current</em>
+ comes after 
+<em>next</em>
+, otherwise they're left unchanged.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#array">Array</a>&#x3C;any></code>:
+        A new sorted array.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { reduce } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+<span class="hljs-comment">// default compare function</span>
+sort([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">2</span>]); <span class="hljs-comment">// [1, 2, 5]</span>
+
+<span class="hljs-comment">// custom compare function</span>
+<span class="hljs-keyword">const</span> largestFirst = <span class="hljs-function">(<span class="hljs-params">current, next</span>) =&gt;</span> next - current;
+sort([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">2</span>]); <span class="hljs-comment">// [5, 2, 1]</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='every'>
+      every
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Calls a function for each element and returns <strong>true</strong> <em>only</em> if every call returns <strong>true</strong>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>every</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>array</span> <code class='quiet'>(<a href="#array">Array</a>&#x3C;any>)</code>
+	    The target array.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(function (element: any, index: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, array: <a href="#array">Array</a>&#x3C;any>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    The function to call for each element.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>this</span> <code class='quiet'>(any?)</code>
+	    The 
+<strong>this</strong>
+ context of the callback.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code>:
+        <strong>true</strong>
+ if the function returns 
+<strong>true</strong>
+ for every element, 
+<strong>false</strong>
+ otherwise.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { every } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+every([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span>], el =&gt; el &gt; <span class="hljs-number">0</span>); <span class="hljs-comment">// true</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='some'>
+      some
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Calls a function for each element and returns <strong>true</strong> if <em>some</em> calls return <strong>true</strong>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>some</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>array</span> <code class='quiet'>(<a href="#array">Array</a>&#x3C;any>)</code>
+	    The target array.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(function (element: any, index: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, array: <a href="#array">Array</a>&#x3C;any>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    The function to call for each element.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>this</span> <code class='quiet'>(any?)</code>
+	    The 
+<strong>this</strong>
+ context of the callback.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code>:
+        <strong>true</strong>
+ if the function returns 
+<strong>true</strong>
+ for some elements, 
+<strong>false</strong>
+ otherwise.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { some } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+some([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span>], el =&gt; el &gt; <span class="hljs-number">4</span>); <span class="hljs-comment">// true</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='range'>
+      range
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Returns an array whose elements range <strong>from</strong> and <strong>to</strong> the given numbers.</p>
+
+
+  <div class='pre p1 fill-light mt0'>range</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>start</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>?)</code>
+	    The start of the range.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>end</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    The end of the range.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>></code>:
+        An array containing the numbers in the range.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { range } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+range(<span class="hljs-number">3</span>, <span class="hljs-number">6</span>); <span class="hljs-comment">// [3, 4, 5]</span>
+range(<span class="hljs-number">3</span>); <span class="hljs-comment">// [0, 1, 2]; same as calling range(0, 3)</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h2 id='object' class='mt0'>
+    Object
+  </h2>
+
+  
+    <p>Object-related utilities.</p>
+
+  
+</section>
+</div>
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='keys'>
+      keys
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Returns an array containing the enumerable <em>keys</em> of the given object (not including those on the prototype chain).</p>
+
+
+  <div class='pre p1 fill-light mt0'>keys</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>object</span> <code class='quiet'>(<a href="#object">Object</a>)</code>
+	    The target object.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#array">Array</a>&#x3C;any></code>:
+        An array containing the keys.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { keys } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+keys({ <span class="hljs-attr">name</span>: <span class="hljs-string">"John"</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">21</span> }); <span class="hljs-comment">// [ "name", "age" ]</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='values'>
+      values
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Returns an array containing the enumerable <em>values</em> of the given object (not including those on the prototype chain).</p>
+
+
+  <div class='pre p1 fill-light mt0'>values</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>object</span> <code class='quiet'>(<a href="#object">Object</a>)</code>
+	    The target object.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#array">Array</a>&#x3C;any></code>:
+        An array containing the values.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { values } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+values({ <span class="hljs-attr">name</span>: <span class="hljs-string">"John"</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">21</span> }); <span class="hljs-comment">// [ "John", 21 ]</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='entries'>
+      entries
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Returns an array containing the enumerable <em>entries</em> (key-value pairs) of the given object (not including those on the prototype chain).</p>
+
+
+  <div class='pre p1 fill-light mt0'>entries</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>object</span> <code class='quiet'>(<a href="#object">Object</a>)</code>
+	    The target object.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#array">Array</a>&#x3C;<a href="#array">Array</a>&#x3C;any>></code>:
+        An array containing the entries.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { entries } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+entries({ <span class="hljs-attr">name</span>: <span class="hljs-string">"John"</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">21</span> }); <span class="hljs-comment">// [[ "name", "John" ], [ "age", 21 ]]</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='eachkey'>
+      eachKey
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Calls a function for each <em>key</em> of the given object.</p>
+
+
+  <div class='pre p1 fill-light mt0'>eachKey</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>object</span> <code class='quiet'>(<a href="#object">Object</a>)</code>
+	    The target object.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(function (key: <a href="#array">Array</a>&#x3C;any>, index: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, keys: <a href="#array">Array</a>&#x3C;any>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a>)</code>
+	    The function to call for each key.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { eachKey } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+eachKey({ <span class="hljs-attr">name</span>: <span class="hljs-string">"John"</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">21</span> }, <span class="hljs-built_in">console</span>.log); <span class="hljs-comment">// outputs "name", "age"</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='eachvalue'>
+      eachValue
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Calls a function for each <em>value</em> of the given object.</p>
+
+
+  <div class='pre p1 fill-light mt0'>eachValue</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>object</span> <code class='quiet'>(<a href="#object">Object</a>)</code>
+	    The target object.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(function (value: <a href="#array">Array</a>&#x3C;any>, index: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, values: <a href="#array">Array</a>&#x3C;any>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a>)</code>
+	    The function to call for each value.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { eachValue } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+eachValue({ <span class="hljs-attr">name</span>: <span class="hljs-string">"John"</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">21</span> }, <span class="hljs-built_in">console</span>.log); <span class="hljs-comment">// outputs "John", 21</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='eachentry'>
+      eachEntry
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Calls a function for each <em>entry</em> (key-value pair) of the given object.</p>
+
+
+  <div class='pre p1 fill-light mt0'>eachEntry</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>object</span> <code class='quiet'>(<a href="#object">Object</a>)</code>
+	    The target object.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(function (entry: <a href="#array">Array</a>&#x3C;any>, index: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, entries: <a href="#array">Array</a>&#x3C;any>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a>)</code>
+	    The function to call for each entry.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { eachEntry } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+eachEntry({ <span class="hljs-attr">name</span>: <span class="hljs-string">"John"</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">21</span> }, <span class="hljs-built_in">console</span>.log); <span class="hljs-comment">// outputs [ "name", "John" ], [ "age", 21 ]</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='mapkeys'>
+      mapKeys
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Calls a functions for each <em>key</em> of the given object, returning a new key.</p>
+
+
+  <div class='pre p1 fill-light mt0'>mapKeys</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>object</span> <code class='quiet'>(<a href="#object">Object</a>)</code>
+	    The target object.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>keyFn</span> <code class='quiet'>(function (key: any, value: any): any)</code>
+	    The function to call for each key, returning a new key.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>recursive</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    If true, will recursively apply the functions to nested objects as well.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#object">Object</a></code>:
+        A new object with the transformations applied.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { mapKeys } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+mapKeys({ <span class="hljs-attr">first</span>: <span class="hljs-number">51</span>, <span class="hljs-attr">second</span>: <span class="hljs-number">24</span> }, key =&gt; key.toUpperCase()); <span class="hljs-comment">// { FIRST: 51, SECOND: 24 }</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='mapvalues'>
+      mapValues
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Calls a functions for each <em>value</em> of the given object, returning a new value.</p>
+
+
+  <div class='pre p1 fill-light mt0'>mapValues</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>object</span> <code class='quiet'>(<a href="#object">Object</a>)</code>
+	    The target object.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>valueFn</span> <code class='quiet'>(function (value: any, key: any): any)</code>
+	    The function to call for each value, returning a new value.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>recursive</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    If true, will recursively apply the functions to nested objects as well.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#object">Object</a></code>:
+        A new object with the transformations applied.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { mapValues } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+mapValues({ <span class="hljs-attr">first</span>: <span class="hljs-number">51</span>, <span class="hljs-attr">second</span>: <span class="hljs-number">24</span> }, val =&gt; val * <span class="hljs-number">2</span>); <span class="hljs-comment">// { first: 102, second: 48 }</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='mapentries'>
+      mapEntries
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Calls two functions, one for each <em>key</em> and another for each <em>value</em> of the given object, each one returning the new key/value.</p>
+
+
+  <div class='pre p1 fill-light mt0'>mapEntries</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>object</span> <code class='quiet'>(<a href="#object">Object</a>)</code>
+	    The target object.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>keyFn</span> <code class='quiet'>(function (key: any, value: any): any)</code>
+	    The function to call for each key, returning a new key.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>valueFn</span> <code class='quiet'>(function (value: any, key: any): any)</code>
+	    The function to call for each value, returning a new value.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>recursive</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    If true, will recursively apply the functions to nested objects as well.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#object">Object</a></code>:
+        A new object with the transformations applied.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { mapEntries } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+mapEntries({ <span class="hljs-attr">first</span>: <span class="hljs-number">51</span>, <span class="hljs-attr">second</span>: <span class="hljs-number">24</span> }, key =&gt; key.toUpperCase(), val =&gt; val * <span class="hljs-number">2</span>); <span class="hljs-comment">// { FIRST: 102, SECOND: 48 }</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='get'>
+      get
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Returns the value at the given <em>path</em> of the given object.</p>
+
+
+  <div class='pre p1 fill-light mt0'>get</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>object</span> <code class='quiet'>(<a href="#object">Object</a>)</code>
+	    The target object.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>path</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The path to be accessed.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>defaultValue</span> <code class='quiet'>(any)</code>
+	    The value to be returned if the value cannot be found.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        The value at the given path.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { get } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+<span class="hljs-keyword">const</span> obj = { <span class="hljs-attr">employees</span>: { <span class="hljs-string">"51213"</span>: { <span class="hljs-attr">children</span>: [{ <span class="hljs-attr">name</span>: <span class="hljs-string">"Joe"</span> }] }}};
+get(obj, <span class="hljs-string">"employees["</span><span class="hljs-number">51213</span><span class="hljs-string">"].children[0].name"</span>); <span class="hljs-comment">// "Joe"</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='set'>
+      set
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Sets the value at the given <em>path</em> of the given object. If path does not exists, it's expanded (object for string keys, array for numeric keys) until the value is set.</p>
+
+
+  <div class='pre p1 fill-light mt0'>set</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>object</span> <code class='quiet'>(<a href="#object">Object</a>)</code>
+	    The target object.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>path</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The path where the value will be set.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>value</span> <code class='quiet'>(any)</code>
+	    The value to set.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#object">Object</a></code>:
+        A new object with the path set to the given value.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { set } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+<span class="hljs-keyword">const</span> unchanged = { <span class="hljs-attr">employees</span>: { <span class="hljs-string">"51213"</span>: { <span class="hljs-attr">children</span>: [{ <span class="hljs-attr">name</span>: <span class="hljs-string">"Joe"</span> }] }}};
+<span class="hljs-keyword">const</span> changed = set(unchanged, <span class="hljs-string">"employees["</span><span class="hljs-number">51213</span><span class="hljs-string">"].children[0].name"</span>, <span class="hljs-string">"Bob"</span>); <span class="hljs-comment">// { employees: { "51213": { children: [{ name: "Bob" }] }}}</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h2 id='uncategorized' class='mt0'>
+    Uncategorized
+  </h2>
+
+  
+    <p>Uncategorized utilities.</p>
+
+  
+</section>
+</div>
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='parsepath'>
+      parsePath
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Will parse an object path string (sequence of keys to be accessed) and return an array with those keys.</p>
+
+
+  <div class='pre p1 fill-light mt0'>parsePath</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>object</span> <code class='quiet'>(<a href="#object">Object</a>)</code>
+	    The target object.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#array">Array</a>&#x3C;any></code>:
+        An array containing the keys.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { parsePath } <span class="hljs-keyword">from</span> <span class="hljs-string">"@srcode/aide"</span>;
+
+parsePath(<span class="hljs-string">"employees["</span><span class="hljs-number">51213</span><span class="hljs-string">"].children[2].name"</span>); <span class="hljs-comment">// ["employees", "51213", "children", 2, "name"]</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
